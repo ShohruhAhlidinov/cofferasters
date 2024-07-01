@@ -64,5 +64,49 @@ body {
 	margin-right: auto;
 }
 .main-content {
-	flex: g;
+	flex: 1;
+}
+.site-header-wrapper{
+  background-color: var(--gold-bg);
+}
+.site-header{
+  margin-bottom: 40px;
+}
+.site-header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-logo{
+  width: 235px;
+  height: 25px;
+  display: inline-block;
+}
+.site-logo:hover{
+  opacity: 0.8;
+}
+.site-logo:active{
+  opacity: 0.6;
+}
+.site-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.site-nav__item:not(:last-child){
+  margin-right: 40px;
+}
+.site-nav__link{
+  text-transform: uppercase;
+  color: var(--green-color);
+	text-decoration: none;
+	transition: all 0.4 ease;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+.site-nav__link:hover{
+	color: var(--green-bg);
 }
